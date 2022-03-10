@@ -1,7 +1,6 @@
 #ifdef TEST
 
 #include "unity.h"
-
 #include "lights.h"
 
 void setUp(void)
@@ -20,8 +19,8 @@ void test_lights_NeedToImplement(void)
 void test_WhenTheHeadlightSwitchIsOff_ThenTheHeadlightsAreOff(void)
 {
     // turn headlight switch off
-    lights_setHeadlightSwitchOff();
-    //confirm the the state of the headlights
-    TEST_ASSERT_EQUAL(false, lights_AreHeadlighsOn());
+    lights_SetHeadlightSwitchOff();
+    // confirm the the state of the headlights
+    TEST_ASSERT_EQUAL(false, lights_AreHeadlightsOn());
 }
 #endif // TEST

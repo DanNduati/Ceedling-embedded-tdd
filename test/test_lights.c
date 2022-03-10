@@ -23,4 +23,12 @@ void test_WhenTheHeadlightSwitchIsOff_ThenTheHeadlightsAreOff(void)
     // confirm the the state of the headlights
     TEST_ASSERT_EQUAL(false, lights_AreHeadlightsOn());
 }
+void test_WhenTheHeadlightSwitchIsOn_ThenTheHeadlightsAreoff(void)
+{
+    // turn headlight switch on
+    lights_SetHeadlightSwitchOn();
+    // confirm the the state of the headlights
+    TEST_ASSERT_EQUAL(true, lights_AreHeadlightsOn());
+}
+
 #endif // TEST

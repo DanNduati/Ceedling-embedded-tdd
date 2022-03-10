@@ -64,3 +64,57 @@ PASSED:  0
 FAILED:  0
 IGNORED: 1
 ```
+
+## Implement a test
+In the testdriven way, we'll first add a test that describes some desired behavior. Say we want this
+behavior:
+`When the headlight switch is off, then the headlights are off`
+The test function:
+```c
+void test_WhenTheHeadlightSwitchIsOff_ThenTheHeadLightsAreOff(void)
+{
+ // Switch off headlight
+ lights_SetHeadlightSwitchOff();
+ // Confirm the state of the headlights
+ TEST_ASSERT_EQUAL(false, lights_AreHeadlightsOn());
+}
+```
+## Implement the functionality
+`lights.h`:
+```bash
+#ifndef lights_H
+#define lights_H
+#include <stdbool.h>
+void lights_SetHeadlightSwitchOff(void);
+bool lights_AreHeadlightsOn(void);
+#endif // lights_H
+```
+`light.c` :
+```bash
+#include "lights.h"
+#include <stdbool.h>
+void lights_SetHeadlightSwitchOff(void)
+{
+}
+bool lights_AreHeadlightsOn(void)
+{
+ return false;
+}
+```
+Running the tests again:
+```bash
+$ ceedling test:all
+
+
+Test 'test_lights.c'
+--------------------
+Running test_lights.out...
+
+--------------------
+OVERALL TEST SUMMARY
+--------------------
+TESTED:  1
+PASSED:  1
+FAILED:  0
+IGNORED: 0
+```

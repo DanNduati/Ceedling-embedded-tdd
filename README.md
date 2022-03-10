@@ -31,3 +31,36 @@ File test/test_lights.c created
 Generate Complete
 ```
 This creates three files: lights.c to implement our module, lights.h to define the public APIs and a test file where unit tests for the module are created.
+
+## <b>Run unit tests</b>
+
+```bash
+$ ceedling test:all
+
+
+Test 'test_lights.c'
+--------------------
+Generating runner for test_lights.c...
+Compiling test_lights_runner.c...
+Compiling test_lights.c...
+Compiling unity.c...
+Compiling lights.c...
+Compiling cmock.c...
+Linking test_lights.out...
+Running test_lights.out...
+
+--------------------
+IGNORED TEST SUMMARY
+--------------------
+[test_lights.c]
+  Test: test_lights_NeedToImplement
+  At line (17): "Need to Implement lights"
+
+--------------------
+OVERALL TEST SUMMARY
+--------------------
+TESTED:  1
+PASSED:  0
+FAILED:  0
+IGNORED: 1
+```

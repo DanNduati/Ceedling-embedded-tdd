@@ -11,3 +11,9 @@ Here's another ceedling TDD project and you are probably wondering why well this
 4. Repeat.
 ## <b>Prerequisites</b>
 - [Ceedling](http://www.throwtheswitch.org/ceedling)
+
+## <b>Creating a new ceedling project</b>
+Use the `ceedling new <projectName>` command to create a new project:
+```bash
+ceedling new rethink
+```

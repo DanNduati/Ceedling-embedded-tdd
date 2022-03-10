@@ -120,4 +120,28 @@ IGNORED: 0
 ```
 
 ## Repeat
-Add more tests and then writing the code to make them pass
+Add more tests and then write the code to make them pass
+
+```bash
+$ ceedling test:all
+
+
+Test 'test_lights.c'
+--------------------
+Generating runner for test_lights.c...
+Compiling test_lights_runner.c...
+Compiling test_lights.c...
+Compiling unity.c...
+Compiling lights.c...
+Compiling cmock.c...
+Linking test_lights.out...
+Running test_lights.out...
+
+--------------------
+OVERALL TEST SUMMARY
+--------------------
+TESTED:  2
+PASSED:  2
+FAILED:  0
+IGNORED: 0
+```

@@ -310,3 +310,30 @@ PASSED:  1
 FAILED:  0
 IGNORED: 0
 ```
+## Repeat
+Add more tests for other possible return values from i2c_readRegister.This is easily done by changing the return value provided to the mock function.
+```bash
+$ ceedling test:tempSensor
+
+
+Test 'test_tempSensor.c'
+------------------------
+Running test_tempSensor.out...
+
+-----------
+TEST OUTPUT
+-----------
+[test_tempSensor.c]
+  - "rawvalue:1023 temperature:104.600006"
+  - "rawvalue:0 temperature:-100.000000"
+
+--------------------
+OVERALL TEST SUMMARY
+--------------------
+TESTED:  2
+PASSED:  2
+FAILED:  0
+IGNORED: 0
+```
+Now we have a driver for an external hardware device that we can test without any of
+the hardware.

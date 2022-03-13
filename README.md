@@ -3,7 +3,7 @@
 </center>
 
 ## <b>Description</b>
-Here's another ceedling TDD repo in this one i do things a bit differently to the previous TDD approach(writing tests for an already existing application) which turned out to be really difficult. So on this project ill be starting use the following approach:
+Here's another ceedling TDD repo in this one i do things a bit differently to the previous TDD approach(writing tests for an already existing application) which turned out to be really difficult. So on this project ill be using the following tdd cycle:
 
 ### Cycle
 1. Write a test, and watch it fail.

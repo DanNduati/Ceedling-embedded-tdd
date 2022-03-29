@@ -341,7 +341,7 @@ the hardware.
 ## Acknowledgment
 Special thanks to 
 - [ThrowTheSwitch.org community](http://www.throwtheswitch.org/) 
-- [This awesome articles](http://www.electronvector.com/)
+- [These awesome articles](http://www.electronvector.com/)
 
 ## <b>License</b>
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](LICENSE)
